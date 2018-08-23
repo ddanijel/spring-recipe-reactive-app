@@ -35,7 +35,7 @@ dependencies {
 
 // export test coverege
 jacocoTestReport {
-    reports{
+    reports {
         xml.enabled true
         html.enabled false
     }
