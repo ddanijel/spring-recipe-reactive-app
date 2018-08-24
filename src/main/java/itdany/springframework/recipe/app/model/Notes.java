@@ -1,10 +1,10 @@
 package itdany.springframework.recipe.app.model;
 
-import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
-@Data
+@Getter
+@Setter
 public class Notes {
 
     private String id;

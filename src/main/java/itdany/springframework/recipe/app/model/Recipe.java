@@ -1,13 +1,13 @@
 package itdany.springframework.recipe.app.model;
 
-import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.util.HashSet;
 import java.util.Set;
 
-@Data
+@Getter
+@Setter
 public class Recipe {
 
     private String id;
