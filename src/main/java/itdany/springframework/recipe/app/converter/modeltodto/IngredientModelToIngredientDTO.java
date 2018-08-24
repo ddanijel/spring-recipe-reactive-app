@@ -27,9 +27,6 @@ public class IngredientModelToIngredientDTO implements Converter<Ingredient, Ing
         ingredientDTO.setId(source.getId());
         ingredientDTO.setDescription(source.getDescription());
         ingredientDTO.setAmount(source.getAmount());
-        if (source.getRecipe() != null) {
-            ingredientDTO.setRecipeId(source.getRecipe().getId());
-        }
         ingredientDTO.setUnitOfMeasure(unitOfMeasureModelToUnitOfMeasureDTO.convert(source.getUnitOfMeasure()));
         return ingredientDTO;
     }

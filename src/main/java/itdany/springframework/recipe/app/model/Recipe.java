@@ -25,11 +25,7 @@ public class Recipe {
     private String directions;
     private Set<Ingredient> ingredients = new HashSet<>();
     private Byte[] image;
-
-    @DBRef
     private Difficulty difficulty;
-
-    @DBRef
     private Notes notes;
 
     @DBRef
@@ -38,7 +34,6 @@ public class Recipe {
     public void setNotes(Notes notes) {
         if (notes != null) {
             this.notes = notes;
-            notes.setRecipe(this);
         }
     }
 
