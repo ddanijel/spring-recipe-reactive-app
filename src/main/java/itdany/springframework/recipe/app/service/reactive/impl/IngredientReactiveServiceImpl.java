@@ -36,14 +36,13 @@ public class IngredientReactiveServiceImpl implements IngredientReactiveService 
 
     @Override
     public Mono<IngredientDTO> findByRecipeIdAndIngredientId(String recipeId, String ingredientId) {
-        return recipeReactiveRepository.findById(recipeId)
-                .map(recipe -> recipe.getIngredients()
-                        .stream()
-                        .filter(ingredient -> ingredient.getId().equalsIgnoreCase(ingredientId))
-                        .findFirst())
-                .filter(Optional::isPresent)
+        return recipeReactiveRepository
+                .findById(recipeId)
+                .flatMapIterable(Recipe::getIngredients)
+                .filter(ingredient -> ingredient.getId().equals(ingredientId))
+                .single()
                 .map(ingredient -> {
-                    IngredientDTO ingredientDTO = modelToIngredientDTO.convert(ingredient.get());
+                    IngredientDTO ingredientDTO = modelToIngredientDTO.convert(ingredient);
                     ingredientDTO.setRecipeId(recipeId);
                     return ingredientDTO;
                 });
