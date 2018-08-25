@@ -121,7 +121,7 @@ public class IngredientReactiveServiceImpl implements IngredientReactiveService 
             if (ingredientOptional.isPresent()) {
                 log.debug("Ingredient found");
                 recipeReactive.getIngredients().remove(ingredientOptional.get());
-                recipeReactiveRepository.save(recipeReactive);
+                recipeReactiveRepository.save(recipeReactive).block();
             }
         } else {
             log.debug("Recipe not found with id: " + recipeId);
