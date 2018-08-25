@@ -1,4 +1,4 @@
-package itdany.springframework.recipe.app.service;
+package itdany.springframework.recipe.app.service.blocking;
 
 import org.springframework.web.multipart.MultipartFile;
 

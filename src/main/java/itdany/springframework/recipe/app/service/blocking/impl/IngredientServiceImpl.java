@@ -1,14 +1,14 @@
-package itdany.springframework.recipe.app.service.impl;
+package itdany.springframework.recipe.app.service.blocking.impl;
 
 import itdany.springframework.recipe.app.converter.dtotomodel.IngredientDTOToIngredientModel;
 import itdany.springframework.recipe.app.converter.modeltodto.IngredientModelToIngredientDTO;
 import itdany.springframework.recipe.app.dto.IngredientDTO;
 import itdany.springframework.recipe.app.model.Ingredient;
 import itdany.springframework.recipe.app.model.Recipe;
-import itdany.springframework.recipe.app.repository.IngredientRepository;
-import itdany.springframework.recipe.app.repository.RecipeRepository;
-import itdany.springframework.recipe.app.repository.UnitOfMeasureRepository;
-import itdany.springframework.recipe.app.service.IngredientService;
+import itdany.springframework.recipe.app.repository.blocking.IngredientRepository;
+import itdany.springframework.recipe.app.repository.blocking.RecipeRepository;
+import itdany.springframework.recipe.app.repository.blocking.UnitOfMeasureRepository;
+import itdany.springframework.recipe.app.service.blocking.IngredientService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 

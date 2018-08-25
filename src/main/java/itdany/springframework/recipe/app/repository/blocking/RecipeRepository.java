@@ -1,4 +1,4 @@
-package itdany.springframework.recipe.app.repository;
+package itdany.springframework.recipe.app.repository.blocking;
 
 import itdany.springframework.recipe.app.model.Recipe;
 import org.springframework.data.repository.CrudRepository;

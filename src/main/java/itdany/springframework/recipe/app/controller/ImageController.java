@@ -1,8 +1,8 @@
 package itdany.springframework.recipe.app.controller;
 
 import itdany.springframework.recipe.app.dto.RecipeDTO;
-import itdany.springframework.recipe.app.service.ImageService;
-import itdany.springframework.recipe.app.service.RecipeService;
+import itdany.springframework.recipe.app.service.blocking.ImageService;
+import itdany.springframework.recipe.app.service.blocking.RecipeService;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;

@@ -2,6 +2,9 @@ package itdany.springframework.recipe.app.repository;
 
 import itdany.springframework.recipe.app.bootstrap.RecipeBootstrap;
 import itdany.springframework.recipe.app.model.UnitOfMeasure;
+import itdany.springframework.recipe.app.repository.blocking.CategoryRepository;
+import itdany.springframework.recipe.app.repository.blocking.RecipeRepository;
+import itdany.springframework.recipe.app.repository.blocking.UnitOfMeasureRepository;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

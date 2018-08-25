@@ -2,8 +2,8 @@ package itdany.springframework.recipe.app.controller;
 
 import itdany.springframework.recipe.app.dto.IngredientDTO;
 import itdany.springframework.recipe.app.dto.RecipeDTO;
-import itdany.springframework.recipe.app.service.IngredientService;
-import itdany.springframework.recipe.app.service.RecipeService;
+import itdany.springframework.recipe.app.service.blocking.IngredientService;
+import itdany.springframework.recipe.app.service.blocking.RecipeService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 

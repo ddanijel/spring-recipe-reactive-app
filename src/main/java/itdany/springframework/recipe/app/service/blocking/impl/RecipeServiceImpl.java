@@ -1,12 +1,12 @@
-package itdany.springframework.recipe.app.service.impl;
+package itdany.springframework.recipe.app.service.blocking.impl;
 
 import itdany.springframework.recipe.app.converter.dtotomodel.RecipeDTOToRecipeModel;
 import itdany.springframework.recipe.app.converter.modeltodto.RecipeModelToRecipeDTO;
 import itdany.springframework.recipe.app.dto.RecipeDTO;
 import itdany.springframework.recipe.app.exception.NotFoundException;
 import itdany.springframework.recipe.app.model.Recipe;
-import itdany.springframework.recipe.app.repository.RecipeRepository;
-import itdany.springframework.recipe.app.service.RecipeService;
+import itdany.springframework.recipe.app.repository.blocking.RecipeRepository;
+import itdany.springframework.recipe.app.service.blocking.RecipeService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

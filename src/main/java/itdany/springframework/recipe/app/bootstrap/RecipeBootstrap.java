@@ -1,9 +1,9 @@
 package itdany.springframework.recipe.app.bootstrap;
 
 import itdany.springframework.recipe.app.model.*;
-import itdany.springframework.recipe.app.repository.CategoryRepository;
-import itdany.springframework.recipe.app.repository.RecipeRepository;
-import itdany.springframework.recipe.app.repository.UnitOfMeasureRepository;
+import itdany.springframework.recipe.app.repository.blocking.CategoryRepository;
+import itdany.springframework.recipe.app.repository.blocking.RecipeRepository;
+import itdany.springframework.recipe.app.repository.blocking.UnitOfMeasureRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;

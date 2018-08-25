@@ -1,8 +1,8 @@
-package itdany.springframework.recipe.app.service.impl;
+package itdany.springframework.recipe.app.service.blocking.impl;
 
 import itdany.springframework.recipe.app.model.Recipe;
-import itdany.springframework.recipe.app.repository.RecipeRepository;
-import itdany.springframework.recipe.app.service.ImageService;
+import itdany.springframework.recipe.app.repository.blocking.RecipeRepository;
+import itdany.springframework.recipe.app.service.blocking.ImageService;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.ArgumentCaptor;

@@ -1,9 +1,9 @@
-package itdany.springframework.recipe.app.service.impl;
+package itdany.springframework.recipe.app.service.blocking.impl;
 
 import itdany.springframework.recipe.app.converter.modeltodto.UnitOfMeasureModelToUnitOfMeasureDTO;
 import itdany.springframework.recipe.app.dto.UnitOfMeasureDTO;
-import itdany.springframework.recipe.app.repository.UnitOfMeasureRepository;
-import itdany.springframework.recipe.app.service.UnitOfMeasureService;
+import itdany.springframework.recipe.app.repository.blocking.UnitOfMeasureRepository;
+import itdany.springframework.recipe.app.service.blocking.UnitOfMeasureService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
